@@ -1,0 +1,21 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+    .baseTile {
+        @apply flex w-[24px] h-[24px] border-uranianBlue border-r border-t transition-all
+    }
+
+    .traversedTile {
+        @apply flex w-[24px] h-[24px] bg-uranianBlue border-uranianBlue border-r border-t transition-all
+    }
+
+    .pathTile {
+        @apply flex w-[24px] h-[24px] bg-vanilla border-vanilla border-r border-t transition-all
+    }
+
+    .wallTileProperties {
+        @apply bg-[#434A42] border border-[#434A42]
+    }
+}
