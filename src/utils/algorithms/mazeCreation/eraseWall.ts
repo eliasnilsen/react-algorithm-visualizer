@@ -1,4 +1,4 @@
-import { SPEEDS, SpeedType } from "../../speed";
+import { SpeedType } from "../../speed";
 import { GridType } from "../../types";
 
 type eraseWallProps = {
@@ -14,7 +14,6 @@ export const eraseWall = async ({
   row,
   col,
   isRight,
-  selectedSpeed,
 }: eraseWallProps) => {
   if (isRight && grid[row][col + 1]) {
     grid[row][col + 1].isWall = false;
